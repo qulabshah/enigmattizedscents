@@ -1,6 +1,3 @@
-// main.js
-
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     const categoryButtons = document.querySelectorAll('.category-btn');
     const priceFilter = document.getElementById('priceFilter');
@@ -17,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
     let cart = [];
   
-    // Filtering Logic
     function filterProducts() {
       const selectedCategory = document.querySelector('.category-btn.selected')?.dataset.filter || 'all';
       const selectedPrice = priceFilter.value;
